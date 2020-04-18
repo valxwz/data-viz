@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Scrolling Nav - Start Bootstrap Template</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/scrolling-nav.css" rel="stylesheet">
+    <title>Scrolling Nav - Start Bootstrap Template</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/scrolling-nav.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">SI649 Visualization - Group 5</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">History</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#services">How long artworks got acquired?</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="bg-primary text-white">
+    <div class="container text-center">
+      <h1>Welcome to MoMA Data Visualization</h1>
+      <p class="lead">This website gives insights on the history of MoMA artworks & artists data</p>
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>History of Gender Distribution at MoMA </h2>
+          <p class="lead">Scroll through to see the history of the number of artworks acquired by MoMA from female and male artists</p>
+          <div id="vis">
+            <script type="text/javascript">
+            let jsonSp="resources/c2.json";
+            vegaEmbed('#vis', jsonSp,{theme: 'latimes',"renderer":"canvas"}).then(function(result) {
+                    }).catch(console.error);
+            </script>
+         </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="services" class="bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2>Classifications of Artworks Acquired By Gender</h2>
+            <p class="lead">This graph shows the distribution of Classification of Artworks acquired By Gender.</p>
+            <div id="vis_5">
+              <script type="text/javascript">
+              let jsonSp_3="resources/c3.json";
+               vegaEmbed('#vis_5', jsonSp_3,{theme: 'latimes',"renderer":"canvas"}).then(function(result) {
+                        }).catch(console.error);
+              </script>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="services" class="bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2>Years Taken Between Work Created to Acquired</h2>
+            <p class="lead">This graph shows how many years an art piece has to wait till it was recognized by MoMA.</p>
+            <div id="vis_1">
+              <script type="text/javascript">
+              let jsonSp_1="resources/c4.json";
+               vegaEmbed('#vis_1', jsonSp_1,{theme: 'latimes',"renderer":"canvas"}).then(function(result) {
+                        }).catch(console.error);
+              </script>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Age of artist when artwok are created</h2>
+          <!-- <p class="lead">This xxx</p> -->
+          <div id="vis_2">
+              <script type="text/javascript">
+              let jsonSp_2="resources/c5.json";
+               vegaEmbed('#vis_2', jsonSp_2,{theme: 'latimes',"renderer":"canvas"}).then(function(result) {
+                        }).catch(console.error);
+              </script>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>World Map of Gender Distribution</h2>
+          <!-- <p class="lead">This xxx</p> -->
+          <div id="vis_2">
+              <img src='/resources/pic_tableu.jpg'></img>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom JavaScript for this theme -->
+  <script src="js/scrolling-nav.js"></script>
+
+</body>
+
+</html>
