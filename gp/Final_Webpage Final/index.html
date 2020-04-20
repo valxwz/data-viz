@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MoMA Data Visualization</title>
+    
+    <!-- Styles for this template -->
+    <link href="style.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+  </head>
+  <body id="page-top">
+    <div class="text_container">
+      <h1>MoMA Data Visualization</h1>
+      <p class="lead">The Museum of Modern Art (MoMa) was established in 1929, and today contains over 200,000 pieces of work spanning roughly 150 years. Through exploration of the data made available from MoMa, it is clear there is a disparity between gender representation and the artworks found in the collection.</p>
+      <p class="lead">A multifaceted approach was utilized in investigating gender representation in the MoMa collection. Using gender, comparisons were drawn between overall artwork acquisition; artist nationality; acquired artwork classification; most productive age ranges; and age of artist recognition.</p>
+    </div>
+    <!-- Second Visualization_Tableau-->
+    <div class="text_container">
+      <h2>Male and Female Artists Distribution Across the World</h2>
+      <p>Of all artists whose artworks were acquired by MoMa, there are much more males than females. Besides, geologically, most artists were from the US and Europe.</p>
+    </div>
+    <div class="text_container">
+      <h3>Male Distribution</h3>
+    </div>
+    <div class='tableauPlaceholder' id='viz1587336683001' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ma&#47;map_15873357011630&#47;Male_dis&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='map_15873357011630&#47;Male_dis' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ma&#47;map_15873357011630&#47;Male_dis&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>
+    <div class="text_container">
+      <h3>Female Distribution</h3>
+    </div>
+    <div class='tableauPlaceholder' id='viz1587336634519' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ma&#47;map_15873357011630&#47;Female_dis&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='map_15873357011630&#47;Female_dis' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ma&#47;map_15873357011630&#47;Female_dis&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>
+
+
+    
+    <!-- First Visualization_Tableau-->
+    <div class="text_container" >
+      <h2>Gender Imparity in MoMA Artwork Acquisition Through History</h2>
+<p>
+Though we can see a growth of collection from female artists, along with the history of big feminist art movements and a lot of famous feminist artworks getting the attention from the art world. The male artists are still keeping the lead among all the artworks being collected, even in the last twenty years.</p><p>
+We also investigate the collaboration works between male and female artworks, which we can see a steady growth through out the years.</p><p>
+(In order to normalize the data, we used logarithm scale for x axis)
+      </p>
+    </div>
+    <div class='tableauPlaceholder' id='viz1587395425660' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ar&#47;Artworks_Test2&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Artworks_Test2&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='no' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ar&#47;Artworks_Test2&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>
+    
+    <!-- Third Visualization Altiar-->
+    <div class="text_container">
+      <h2>Artwork Classification Acquisition by Gender</h2>
+      <p>The top five classifications of artworks in MoMa are photography, print, drawing, painting, and sculpture. The total acquisition of these types of artwork have steadily increased since the 1940s, but at what rate according to gender? </p>
+      <p>Although MoMa began collecting artwork in 1929, it was not until the 1970s when female artist works began to be acquired in larger numbers. In the early 2000s, female artists began to equalize a little in comparison to their male counterparts.</p>
+      <p>Although most contributions have been from male artists, there are a few categories and years where female artists had a significant amount of work acquired. In 2012, female artists had roughly 30% more print artworks. In the later 2000s, male and female artists who created sculptures and paintings were acquired at a more equal amount.
+      </p>
+    </div>
+    <div id="classification"></div>
+    <!-- Fourth Visualization Script_Altair-->
+    <div class="text_container">
+      <h2>At what age was an artwork created?</h2>
+      <p>Majority of artworks are produced when an artist was around 30-50 ages regardless of genders. And it decreases as male artists getting older. However, artworks made by female overall create more artworks when they get older which means female artists tend to be more active around 30-40 ages and around 80-90. From another perspective, it may show that female artists overall has more obstacles and less freedom in terms of art creating.</p>
+    </div>
+    <div id="createage"></div>
+    <!-- Fifth Visualization desciption -->
+    <div class="text_container">
+      <h2>When Would a Artwork be Recognized</h2>
+      <p>This graph shows how many years an artwork has to wait till it was recognized by MoMA. We compared the time an artwork was created with the time it was acquired by MoMA. Generally speaking most artwork would be recognized within 10 years. The author didn't need to wait for too long to valid his/her work.</p>
+    </div>
+    <!-- Fifth Visualization Altair Code -->
+    <div id="acquiretime" style="margin-left: 15%"></div>
+    <!-- First Visualization Script_Tableau-->
+    <script type='text/javascript'>                    var divElement = document.getElementById('viz1587395425660');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1024px';vizElement.style.height='1550px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1024px';vizElement.style.height='1500px';} else { vizElement.style.width='100%';vizElement.style.height='1300px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+    <!-- Second Visualization Script_Tableau-->
+    <script type='text/javascript'>                    var divElement = document.getElementById('viz1587336683001');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1024px';vizElement.style.height='627px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1024px';vizElement.style.height='627px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+    <script type='text/javascript'>                    var divElement = document.getElementById('viz1587336634519');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1024px';vizElement.style.height='627px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1024px';vizElement.style.height='627px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+    
+    <!-- Third, Fourth Visualization Script_Altair-->
+    <script type="text/javascript">
+    let jsonSpec="classification.json";
+    let jsonSpec2="createage.json";
+    vegaEmbed('#classification', jsonSpec).then(function(result) {}).catch(console.error);
+    vegaEmbed('#createage', jsonSpec2).then(function(result) {}).catch(console.error);
+    </script>
+    <!-- Fifth Visualization Script_Altair-->
+    <script type="text/javascript">
+    // let jsonSpec="classification.json";
+    let jsonSpec5="years_acquired_created.json";
+    vegaEmbed('#acquiretime', jsonSpec5).then(function(result) {}).catch(console.error);
+    // vegaEmbed('#createage', jsonSpec2).then(function(result) {}).catch(console.error);
+    </script>
+  </body>
+</html>
